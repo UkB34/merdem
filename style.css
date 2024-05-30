@@ -1,0 +1,75 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('backround1.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmin sayfa boyutuna uyacak şekilde ölçeklendirilmesi */
+    background-repeat: no-repeat; /* Resmin tekrar edilmemesi */
+    background-position: center; /* Resmin ortalanması */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 400px;
+    height: 300px;
+}
+
+.overlay {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.buttons {
+    position: absolute;
+    top: 100%;
+    left: 28%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#yesButton {
+    background-color: rgb(83, 14, 63);
+    color: rgb(0, 0, 0)e;
+}
+
+
+#yesButton:hover {
+    background-color: rgb(26, 0, 19);
+}
+
+#noButton {    position: absolute;
+}
+
+#noButton {
+    background-color: rgb(83, 14, 63);
+    color: rgb(0, 0, 0)e;
+}
+
+#noButton:hover {
+    background-color: rgb(26, 0, 19);
+}
